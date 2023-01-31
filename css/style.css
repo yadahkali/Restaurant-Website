@@ -1,0 +1,537 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap'); */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  max-width: 100%;
+  scroll-behavior: smooth;
+
+
+}
+.checkbox{
+  visibility: hidden;
+}
+.main-section {
+  position: relative;
+  background-image: url(../images/header-image2.jpg);
+
+ height: 350px;
+ background-position: left center;
+ max-width: 100%;
+
+}
+.main-section::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(244, 241, 241, 0.453);
+
+}
+
+
+/* Navigation bar */
+
+.navbar{
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  padding: 10px 200px;
+  opacity: 0.9;
+  width: 100%;
+  position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+
+  z-index:1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navlinks a{
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+
+}
+
+.navlinks a:hover{
+  color: rgb(0, 68, 77);
+}
+
+.logo{
+  margin-left: 100px;
+  font-size: large;
+  font-weight: 900;
+}
+
+/* Header Text */
+
+.header-text{
+  position: relative;
+  top: 150px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.header-btn{
+  position: relative;
+  padding: 12px 30px;
+  background-color: rgb(0, 68, 77);
+  border: none;
+  border-radius: 20px;
+  color: white;
+}
+
+/* ABOUT Section */
+
+.about-section{
+  display: flex;
+  justify-content: center;
+  width: 90rem;
+  gap:30px;
+  background-color: #F4F5F4;
+
+
+
+}
+.about-section img{
+  width: 400px;
+  height: 300px;
+
+}
+
+.about-content{
+  width:400px;
+
+}
+.about-title{
+font-size: 20px;
+color: grey;
+}
+.about-header{
+  font-weight: bold;
+  font-size: 25px;
+}
+.about-paragraph{
+  color: grey;
+  font-size: 13px;
+}
+
+/* CATEGORY SECTION */
+
+.category-section{
+  display: flex;
+  justify-content:center;
+  gap:20px;
+  width: 90%;
+  position: relative;
+  top: 100px;
+
+
+}
+
+
+.food-title{
+  position: relative;
+  text-align: center;
+  color: grey;
+  font-size: 20px;
+  bottom: 50px;
+  left: 500px;
+}
+
+.category-section img{
+  display: block;
+  width: 260px;
+  height:200px;
+}
+/* FOOD IMAGE 1 */
+.food-image1{
+  position: relative;
+  width: 260px;
+  /* display: inline-block; */
+}
+
+.food1-overlay{
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  width: 260px;
+  height: 0;
+  transition: .5s ease;
+}
+
+.food-image1:hover .food1-overlay{
+ height: 100%;
+
+}
+.food-overlay-title{
+  color: white;
+  position: absolute;
+  bottom: 120px;
+  left:30%;
+  font-size: 25px;
+}
+
+.food-overlay-btn{
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: rgb(0, 68, 77);
+  color: white;
+  position: absolute;
+  bottom: 50px;
+  left:28%;
+  text-decoration: none;
+
+}
+
+/* FOOD IMAGE 2 */
+.food-image2{
+  position: relative;
+    width: 260px;
+  display: inline-block;
+}
+
+.food2-overlay{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+    width: 260px;
+  height: 0;
+  transition: .5s ease;
+}
+
+.food-image2:hover .food2-overlay{
+ height: 100%;
+
+}
+
+/* FOOD IMAGE 3 */
+.food-image3{
+  position: relative;
+  width: 300px;
+  display: inline-block;
+}
+
+.food3-overlay{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  width: 260px;
+  height: 0;
+  transition: .5s ease;
+}
+
+.food-image3:hover .food3-overlay{
+ height: 100%;
+
+}
+
+/* MENU SECTION */
+
+.Menu-Section{
+  position: relative;
+  top:100px;
+}
+
+.Main-menu-title{
+  position: relative;
+  top:80px;
+  font-size: 20px;
+  color: grey;
+  text-align: center;
+
+}
+.menu-row1{
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin-left: 30px;
+
+}
+
+.menu-row2{
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin-left: 30px;
+  position: relative;
+  top:30px;
+
+}
+
+.menu-row3{
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin-left: 30px;
+  position: relative;
+  top:70px;
+
+}
+
+
+.Menu-Section img{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+.menu-content{
+  display: flex;
+  gap:20px;
+  position: relative;
+  top:100px;
+}
+
+.menu-paragraph{
+  width: 250px;
+  position: relative;
+  color: grey;
+  font-size: 13px;
+  top:60px;
+}
+
+.menu-title{
+  color: grey;
+  font-size: 20px;
+}
+
+.price{
+  color: rgb(0, 68, 77);
+  font-weight: bold;
+}
+
+
+/* TESTIMONIAL SECTION */
+.Testimonial-Section{
+    position: relative;
+    top: 400px;
+    background-color: #F4F5F4;
+}
+
+.Testimonial-title{
+  position: relative;
+  text-align: center;
+  color: grey;
+  font-size: 20px;
+  bottom: 50px;
+}
+
+.stars{
+  position: relative;
+  left:30px;
+}
+.Testimonial-container{
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  padding-bottom: 60px;
+}
+.Testimonial-Section img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: relative;
+  left:30px;
+}
+
+.Testimonial-column{
+  width: 250px;
+}
+.Testimonial-paragraph{
+  color: grey;
+  font-size: 13px;
+  width: 200px;
+}
+
+.customer-name{
+  color: grey;
+  font-size: 13px;
+  position: relative;
+  left:39px;
+}
+
+
+/* CONTACT SECTION */
+.Contact-Section img{
+  width: 24rem;
+  height: 20rem;
+  position: relative;
+  top:30px;
+}
+.Contact-Section{
+  background-color: #C9CDC6;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 400px;
+  height: 23.6rem;
+}
+
+.contact-form{
+  background-color: white;
+  width: 24rem;
+  height: 20rem;
+  position: relative;
+  top:30px;
+}
+
+.input{
+  border: none;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  height: 40px;
+}
+
+textarea{
+  border: none;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  height: 100px;
+}
+
+.contact-form{
+  padding: 20px;
+}
+
+.submit-btn{
+  padding: 7px 20px;
+  border-radius: 30px;
+  background-color: rgb(0, 68, 77);
+  color: white;
+  text-decoration: none;
+}
+
+.contact-title{
+  color: grey;
+  font-size: 20px;
+}
+
+footer{
+  background-color: #525252;
+  height: 100px;
+  position: relative;
+  top:400px;
+  color: white;
+  text-align: center;
+}
+
+.footer-content{
+  padding: 40px 0px;
+}
+
+
+/*--------------------------------------------------------------------------------*/
+/* --------------------RESPONSIVENESS ON MOBILE DEVICE-----------------------------*/
+/*--------------------------------------------------------------------------------*/
+
+@media screen and (max-width:640px){
+  body{
+    overflow-x: hidden;
+  }
+
+  .about-section{
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .category-section{
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+
+  .menu-row1{
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+
+
+
+  }
+
+  .menu-row2{
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+
+
+  }
+
+  .menu-row3{
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+
+  }
+
+  .Testimonial-container{
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .Contact-Section{
+    align-items: center;
+    flex-direction: column;
+    height: 40rem;
+    width: 100%;
+  }
+
+  .Contact-Section img{
+    position: absolute;
+    top:20px;
+    height: 200px;
+  }
+
+  .navbar{
+    width: 100%;
+    flex-direction: column wrap;
+
+
+  }
+
+  .navlinks{
+    position: relative;
+    right: 320px;
+
+
+  }
+
+  .links{
+    background-color: rgb(0, 68, 77);
+    color:white;
+    padding: 10px;
+    position: relative;
+
+  }
+  .navlinks a{
+    color:white;
+  }
+
+  .navlinks a:hover{
+    color:white;
+  }
+  .logo{
+      position: relative;
+      left: 100px;
+  }
+
+}
+
+
